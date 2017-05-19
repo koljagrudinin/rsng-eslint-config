@@ -1,0 +1,31 @@
+{
+  "name": "n.grudinin",
+  "version": "0.0.1",
+  "description": "test project for eslint config",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "eslint": "^3.19.0",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koljagrudinin/rsng-eslint-config.git"
+  },
+  "keywords": [
+    "eslint",
+    "config"
+  ],
+  "author": "n.grudinin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/koljagrudinin/rsng-eslint-config/issues"
+  },
+  "homepage": "https://github.com/koljagrudinin/rsng-eslint-config#readme"
+}
