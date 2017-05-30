@@ -1,11 +1,11 @@
-   Строки
-Используйте одинарные кавычки (' ') при объявлении строк. Это удобно при работе с HTML разметкой
-Пример
+//    Строки
+// Используйте одинарные кавычки (' ') при объявлении строк. Это удобно при работе с HTML разметкой
+// Пример
 // плохо
-    var name = "Bob Parr";
+var name1 = "Bob Parr",
     // хорошо
-    var name = 'Bob Parr';
+    name2 = 'Bob Parr',
     // плохо
-    var fullName = "Bob " + this.lastName;
+    fullName1 = "Bob " + this.lastName,
     // хорошо
-    var fullName = 'Bob ' + this.lastName;
+    fullName2 = 'Bob ' + this.lastName;

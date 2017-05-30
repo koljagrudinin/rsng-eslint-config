@@ -1,35 +1,31 @@
-Оборачивайте Angular компоненты в функции моментального вызова
+// Оборачивайте Angular компоненты в функции моментального вызова
+// Пример
+//плохо
 
-21/36
-  
-Пример
-    //плохо
-    // logger.js
+angular
+    .module('app')
+    .factory('logger', logger);
+// logger функция объявлена в глобальной области видимости
+function logger() { }
+angular
+    .module('app')
+    .factory('storage', storage);
+// storage функция объявлена в глобальной области видимости
+function storage() { }
+//хорошо
+(function () {
+    'use strict';
     angular
         .module('app')
         .factory('logger', logger);
-    // logger функция объявлена в глобальной области видимости
-    function logger() { }
-    // storage.factory.js
+    function logger2() { }
+})();
+(function () {
+    'use strict';
     angular
         .module('app')
         .factory('storage', storage);
-    // storage функция объявлена в глобальной области видимости
-    function storage() { }
-//хорошо
-    // logger.factory.js
-    (function() {
-        'use strict';
-        angular
-            .module('app')
-            .factory('logger', logger);
-        function logger() { }
-})();
-    // storage.js
-    (function() {
-        'use strict';
-        angular
-            .module('app')
-            .factory('storage', storage);
-        function storage() { }
+    function storage2() { }
+
+    storage2();
 })();
