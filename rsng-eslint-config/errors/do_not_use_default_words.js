@@ -2,11 +2,11 @@
 // Пример
 // плохо
 var superman = {
-  default: { clark: 'kent' },
-  private: true
+    default: { clark: 'kent' },
+    private: true
 };
 // хорошо
 var superman = {
-  defaults: { clark: 'kent' },
-  hidden: true
+    defaults: { clark: 'kent' },
+    hidden: true
 };

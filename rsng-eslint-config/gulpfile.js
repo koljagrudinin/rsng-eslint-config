@@ -4,24 +4,24 @@ const debug = require('gulp-debug');
 var filesExist = require('files-exist');
 
 var items = [
-  "activate_init.js",
-  "angular_components_call_yourself.js",
-  "angular_controllers.js",
-  "angular_one_component_per_file.js",
-  "array_push.js",
-  "array_slice_clone.js",
-  "array_slice_convert.js",
+  // "activate_init.js",
+  // "angular_components_call_yourself.js",
+  // "angular_controllers.js",
+  // "angular_one_component_per_file.js",
+  // "array_push.js",
+  // "array_slice_clone.js",
+  // "array_slice_convert.js",
   "cache_jquery_selectors.js",
-  "catch_promises.js",
-  //"create_arrays_using_square_brackets.js",
-  //"do_not_override_props.js",
-  //"do_not_reuse_controllers.js",
-  //"do_not_use_default_words.js",
-  //"do_not_use_delete.js",
-  //"do_not_use_functions_without_names.js",
-  //"do_not_use_promise_success_or_error.js",
-  //"eof.js",
-  //"file_structure.js",
+  // "catch_promises.js",
+  // "create_arrays_using_square_brackets.js",
+  // "do_not_override_props.js",
+  // "do_not_reuse_controllers.js",
+  // "do_not_use_default_words.js",
+  // "do_not_use_delete.js",
+  // "do_not_use_functions_without_names.js",
+  // "do_not_use_promise_success_or_error.js",
+  // "eof.js",
+  // "file_structure.js",
   //"function_declaration.js",
   //"literate.js",
   //"naming.js",
@@ -66,9 +66,9 @@ gulp.task('scripts', function () {
      
       rules: {
         //"indent": 0,
-        //"no-console": 0,
+        "no-console": 0,
         //"comma-dangle": 0,
-        //"spaced-comment": 0,
+        "spaced-comment": 0,
         //"no-trailing-spaces": 0,
         //"no-use-before-define": 0,
         //"wrap-iife": 0,
@@ -86,7 +86,7 @@ gulp.task('scripts', function () {
         //"semi": 0,
         //"max-len": 0
       },
-      "globals": ["$q", "logger"]
+      "globals": ["$q", "logger", "$http", "$"]
     }))
     .pipe(eslint.format());
 });

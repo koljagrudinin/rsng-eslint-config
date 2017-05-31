@@ -8,34 +8,34 @@
 
 //Пример
 /* avoid */
-function dataService() {
-  var someValue = '';
-  function save() {
-    /* */
-  };
-  function validate() {
-    /* */
-  };
-  return {
-    save: save,
-    someValue: someValue,
-    validate: validate
-  };
+function dataService1() {
+    var someValue = '';
+    function save() {
+        /* */
+    };
+    function validate() {
+        /* */
+    };
+    return {
+        save: save,
+        someValue: someValue,
+        validate: validate
+    };
 }
 //хорошо
-function dataService() {
-  var someValue = '';
-  var service = {
-    save: save,
-    someValue: someValue,
-    validate: validate
-  };
-  return service;
-  ////////////
-  function save() {
-    /* */
-  };
-  function validate() {
-    /* */
-  };
+function dataService2() {
+    var someValue = '';
+    var service = {
+        save: save,
+        someValue: someValue,
+        validate: validate
+    };
+    return service;
+    ////////////
+    function save() {
+        /* */
+    };
+    function validate() {
+        /* */
+    };
 }

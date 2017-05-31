@@ -2,17 +2,23 @@
 
 //Пример
 // плохо
-    function setSidebar() {
-      $('.sidebar').hide();
-      // ...stuff...
-      $('.sidebar').css({
+function setSidebar1() {
+    $('.sidebar').hide();
+    // ...stuff...
+    $('.sidebar').css({
         'background‐color': 'pink'
-}); }
+    });
+}
+
+setSidebar1();
 // хорошо
-    function setSidebar() {
-      var $sidebar = $('.sidebar');
-      $sidebar.hide();
-      // ...stuff...
-      $sidebar.css({
+function setSidebar2() {
+    var $sidebar = $('.sidebar');
+    $sidebar.hide();
+    // ...stuff...
+    $sidebar.css({
         'background‐color': 'pink'
-}); }
+    });
+}
+
+setSidebar2();

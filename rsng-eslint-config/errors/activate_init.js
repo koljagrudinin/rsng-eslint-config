@@ -1,11 +1,9 @@
 
 // Помещайте всю стартовую логику в функцию activate/init
 
-// 25/36
-
 // Пример
 //плохо
-function AvengersController(dataservice) {
+(function AvengersController1(dataservice) {
     var vm = this;
     vm.avengers = [];
     vm.title = 'Avengers';
@@ -13,9 +11,9 @@ function AvengersController(dataservice) {
         vm.avengers = data;
         return vm.avengers;
     });
-}
+})();
 //хорошо
-function AvengersController(dataservice) {
+(function AvengersController2(dataservice) {
     var vm = this;
     vm.avengers = [];
     vm.title = 'Avengers';
@@ -27,4 +25,4 @@ function AvengersController(dataservice) {
             return vm.avengers;
         });
     }
-}
+})();

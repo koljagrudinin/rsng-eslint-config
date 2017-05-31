@@ -1,19 +1,20 @@
-//Именованные vs Анонимные функции Используйте именованные ф­и вместо анонимных
+//Используйте именованные ф­ункции вместо анонимных
 
-//Пример
-//плохо
-    angular
-        .module('app')
-        .controller('DashboardController', function() { })
-        .factory('logger', function() { });
-//хорошо
-    // dashboard.js
-    angular
-        .module('app')
-        .controller('DashboardController', DashboardController);
-    function DashboardController() { }
-// logger.js
-    angular
-        .module('app')
-        .factory('logger', logger);
-    function logger() { }
+// плохо
+angular
+    .module('app')
+    .controller('DashboardController', function () { })
+    .factory('logger', function () { });
+
+function DashboardController() { }
+
+// хорошо
+angular
+    .module('app')
+    .controller('DashboardController', DashboardController);
+
+function logger() { }
+
+angular
+    .module('app')
+    .factory('logger', logger);

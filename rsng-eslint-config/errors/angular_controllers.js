@@ -1,5 +1,6 @@
 //Контроллеры
-//Используйте controllerAs синтакcис. Это позволяет обращаться к св­вам/методам через точкy и избавляет от обращения через $parent
+//Используйте controllerAs синтакcис. Это позволяет обращаться к св­вам/методам 
+//через точкy и избавляет от обращения через $parent
   
 //Пример
 //плохо
@@ -7,13 +8,13 @@
         $scope.name = {};
         $scope.sendMessage = function() { };
 }
-    <div ng‐controller="CustomerController">
-        {{ name }}
-</div>
-//хорошо
-    <div ng‐controller="CustomerController as customer">
-        {{ customer.name }}
-</div>
+//     {/*<div ng‐controller="CustomerController">
+//         {{ name }}
+// </div>
+// //хорошо
+//     <div ng‐controller="CustomerController as customer">
+//         {{ customer.name }}
+// </div>*/}
     function CustomerController() {
         this.name = {};
         this.sendMessage = function() { };

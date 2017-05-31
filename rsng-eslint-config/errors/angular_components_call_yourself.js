@@ -12,6 +12,8 @@ angular
     .factory('storage', storage);
 // storage функция объявлена в глобальной области видимости
 function storage() { }
+
+storage();
 //хорошо
 (function () {
     'use strict';
@@ -19,13 +21,6 @@ function storage() { }
         .module('app')
         .factory('logger', logger);
     function logger2() { }
-})();
-(function () {
-    'use strict';
-    angular
-        .module('app')
-        .factory('storage', storage);
-    function storage2() { }
 
-    storage2();
+    logger2();
 })();
