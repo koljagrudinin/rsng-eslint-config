@@ -3,3 +3,4 @@
 /.vs
 /rsng-eslint-config/bin
 /rsng-eslint-config/node_modules
+/rsng-eslint-config/obj
