@@ -2,3 +2,4 @@
 .DS_Store
 /.vs
 /rsng-eslint-config/bin
+/rsng-eslint-config/node_modules
